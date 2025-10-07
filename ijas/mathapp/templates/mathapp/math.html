@@ -1,0 +1,67 @@
+<html>
+  <head>
+   <title>Body Mass Index</title>
+    <h1>EX:01-BMI CALCULATOR [Ijas (25007615)]</h1>
+   <style type="text/css">
+body
+{
+  background-color:cyan;
+}
+.edge{
+width:50%;
+margin-left:auto;
+margin-right:50%;
+padding-top:100px;
+padding-left:500px;    
+}
+.box{
+display:block;
+border:Thick dashed black;
+width:500px;
+min-height:300px;
+font-size:20px;
+background-color:white;    
+}
+.formelt{
+    color:red;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 6px;
+}
+h2
+{
+color:rgba(0, 0, 0, 1);
+text-align:center;
+padding-top: 10px;
+papping-bottom: 50px;
+}
+h1{
+  color:red;
+  text-align:center;
+  padding-top: 50px;
+} 
+    </style>
+ </head>
+ <body>
+  <div class="edge">
+    <div class="box">
+    <h2>Body Mass Index (BMI) Calculator</h2>
+  <form method="POST">
+    {% csrf_token %}
+  <div class="formelt">
+    Weight: <input type="text" name="weight" value="{{w}}"></input>(in kg)<br/>
+  </div>
+  <div class="formelt">
+    Height: <input type="text" name="height" value="{{h}}"></input>(in m)<br/>
+  </div>
+  <div class="formelt">
+    <input type="submit" value="Calculate"></input><br/>
+  </div>
+  <div class="formelt">
+    BMI:<input type="text" name="bmi" value="{{bmi}}"></input>kg/m<sup>2</sup><br/>
+  </div>
+  </form> 
+  </div>
+  </div>
+ </body>
+</html>
