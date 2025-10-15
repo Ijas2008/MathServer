@@ -42,7 +42,6 @@ math.html
 <html>
   <head>
    <title>Body Mass Index</title>
-    <h1>EX:01-BMI CALCULATOR [Ijas (25007615)]</h1>
    <style type="text/css">
 body
 {
@@ -84,6 +83,7 @@ h1{
     </style>
  </head>
  <body>
+   <h1>EX:01-BMI CALCULATOR [Ijas (25007615)]</h1>
   <div class="edge">
     <div class="box">
     <h2>Body Mass Index (BMI) Calculator</h2>
